@@ -11,6 +11,11 @@ body{
     height: 81vh;
     background: #999;
 }
+#regler{
+    position: relative;
+    z-index: 3;
+    background: #fff;
+}
 .box{
     position: absolute;
     border-radius: 50%;
@@ -31,6 +36,7 @@ form{
     position: absolute;
     top: 42px;
     left: 200px;
+    z-index: 4;
 }
 h1{
     margin: 0;
