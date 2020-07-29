@@ -20,8 +20,8 @@ function boom() {
     let left = event.clientX
     document.getElementById(`animation${count}`).classList.add('box')
     document.getElementById(`animation${count}`).classList.add('animation')
-    document.getElementById(`animation${count}`).style.top = `calc(${top}px - ${size}px)`
-    document.getElementById(`animation${count}`).style.left = `calc(${left}px - ${size}px)`
+    document.getElementById(`animation${count}`).style.top = `calc(${top}px - ${size / 2}px)`
+    document.getElementById(`animation${count}`).style.left = `calc(${left}px - ${size / 2}px)`
     document.getElementById(`animation${count}`).style.height = `${size}px`
     document.getElementById(`animation${count}`).style.width = `${size}px` 
     document.getElementById(`animation${count}`).style.background = andernRegler()
