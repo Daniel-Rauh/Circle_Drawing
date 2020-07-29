@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="body">
+    <h1>Click gray box to create circles</h1>
+    <p>
+        <div>
+            <input type="range" id="rot" value="255" min="0" max="255" onchange="andernRegler()" style="background:red">
+            Rot<br>
+            <input type="range" id="grun" value="255" min="0" max="255" onchange="andernRegler()" style="background:green">
+            Grün<br>
+            <input type="range" id="blau" value="255" min="0" max="255" onchange="andernRegler()" style="background:blue">
+            Blau<br>
+        </div>
+        <div id="preview"></div>
+        <form action="">
+            <label for="width">Size:</label>
+            <select name="width" id="width" onchange="selectSize()">
+                <option value="1">5px</option>
+                <option value="2">10px</option>
+                <option value="3" selected>25px</option>
+                <option value="4">50px</option>
+            </select>
+        </form>
+    </p>
+    <div id="picBox"></div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

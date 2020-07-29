@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+body{
+    margin: 0;
+}
+#picBox{
+    width: 100%;
+    height: 77vh;
+    background: #999;
+}
+.box{
+    position: absolute;
+    border-radius: 50%;
+}
+.animation{
+    animation: boom .5s 1;
+}
+#preview{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    position: absolute;
+    top: 62px;
+    left: 200px;
+}
+h1{
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+@keyframes boom{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
