@@ -7,7 +7,7 @@ const sizeInput = document.getElementById("width")
 box.addEventListener("click", boom)
 let count = 0
 let count2 = -1
-let size = 25
+let size = 50
 function andernRegler() {
     preview.style.background = `rgb(${red.value},${green.value},${blue.value})`
     return `rgb(${red.value},${green.value},${blue.value})`
@@ -40,6 +40,9 @@ function selectSize() {
             break;
         case `4`:
             size = 50
+            break;
+        case `5`:
+            size = 100
             break;
     }
 }
